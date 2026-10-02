@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="700" viewBox="0 0 888 700" role="img" aria-label="unstuck: demo">
+<title>unstuck: demo</title>
+<rect width="888" height="700" rx="12" fill="#0d1117"/>
+<rect width="888" height="36" rx="12" fill="#161b22"/><rect y="24" width="888" height="12" fill="#161b22"/>
+<circle cx="22" cy="18" r="6" fill="#ff5f56"/><circle cx="42" cy="18" r="6" fill="#ffbd2e"/><circle cx="62" cy="18" r="6" fill="#27c93f"/>
+<text x="444" y="22" fill="#8b949e" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">unstuck: demo</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14">
+<text x="24" y="58" fill="#e6edf3"><tspan fill="#7ee787">$</tspan> npx unstuck --demo</text>
+<text x="24" y="98" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">unstuck</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#8b949e">0.1.0</tspan><tspan fill="#e6edf3">   6 sessions · 46 tool calls · 1 project</tspan></text>
+<text x="24" y="118" xml:space="preserve"><tspan fill="#8b949e">bundled demo data · read-only · nothing leaves your machine</tspan></text>
+<text x="24" y="138" xml:space="preserve"></text>
+<text x="24" y="158" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">WHERE YOUR AGENT GOT STUCK</tspan></text>
+<text x="24" y="178" xml:space="preserve"><tspan fill="#e6edf3">1  </tspan><tspan fill="#e3b341">edit thrash  </tspan><tspan fill="#e6edf3"> limiter.ts: 6 edits, 5 after a failing command, 5 edits undone   </tspan><tspan fill="#8b949e">acme-api · Sep 19</tspan></text>
+<text x="24" y="198" xml:space="preserve"><tspan fill="#e6edf3">   </tspan><tspan fill="#8b949e">└</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#8b949e">The agent changed this file back to an earlier state.</tspan></text>
+<text x="24" y="218" xml:space="preserve"><tspan fill="#e6edf3">2  </tspan><tspan fill="#d2a8ff">output flood </tspan><tspan fill="#e6edf3"> `pnpm test` returned ~20,177 tokens over 2 calls                 </tspan><tspan fill="#8b949e">acme-api · Sep 22</tspan></text>
+<text x="24" y="238" xml:space="preserve"><tspan fill="#e6edf3">   </tspan><tspan fill="#8b949e">└</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#8b949e">Pipe through head/tail/grep or add a quieter flag so the agent sees only the result.</tspan></text>
+<text x="24" y="258" xml:space="preserve"><tspan fill="#e6edf3">3  </tspan><tspan fill="#d2a8ff">output flood </tspan><tspan fill="#e6edf3"> `pnpm test` returned ~19,921 tokens over 2 calls                 </tspan><tspan fill="#8b949e">acme-api · Sep 16</tspan></text>
+<text x="24" y="278" xml:space="preserve"><tspan fill="#e6edf3">   </tspan><tspan fill="#8b949e">└</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#8b949e">Pipe through head/tail/grep or add a quieter flag so the agent sees only the result.</tspan></text>
+<text x="24" y="298" xml:space="preserve"><tspan fill="#e6edf3">4  </tspan><tspan fill="#ff7b72">retry loop   </tspan><tspan fill="#e6edf3"> `curl -s localhost:3000/health` failed 6× in one session         </tspan><tspan fill="#8b949e">acme-api · Sep 19</tspan></text>
+<text x="24" y="318" xml:space="preserve"><tspan fill="#e6edf3">   </tspan><tspan fill="#8b949e">└</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#8b949e">curl: (7) Failed to connect to localhost port 3000: Connection refused</tspan></text>
+<text x="24" y="338" xml:space="preserve"><tspan fill="#e6edf3">5  </tspan><tspan fill="#56d4dd">re-read      </tspan><tspan fill="#e6edf3"> config.ts read 4× with no change in between                      </tspan><tspan fill="#8b949e">acme-api · Sep 22</tspan></text>
+<text x="24" y="358" xml:space="preserve"><tspan fill="#e6edf3">   </tspan><tspan fill="#8b949e">└</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#8b949e">/home/dev/acme-api/src/config.ts</tspan></text>
+<text x="24" y="378" xml:space="preserve"><tspan fill="#8b949e">   … 3 more (use --top 8 or --json)</tspan></text>
+<text x="24" y="398" xml:space="preserve"></text>
+<text x="24" y="418" xml:space="preserve"><tspan fill="#8b949e">Flagged moments account for ~26 tool calls and ~40k tokens of tool output. Heuristic, not a bill.</tspan></text>
+<text x="24" y="438" xml:space="preserve"></text>
+<text x="24" y="458" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">LEARNED FIXES</tspan><tspan fill="#8b949e">   failed, then a close variant worked, in 2+ places</tspan></text>
+<text x="24" y="478" xml:space="preserve"><tspan fill="#e6edf3">  </tspan><tspan fill="#ff7b72">✗</tspan><tspan fill="#e6edf3"> npm test                             </tspan><tspan fill="#8b949e">→</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#7ee787">✓</tspan><tspan fill="#e6edf3"> pnpm test                             </tspan><tspan fill="#8b949e">2× in 2 sessions</tspan></text>
+<text x="24" y="498" xml:space="preserve"><tspan fill="#e6edf3">  </tspan><tspan fill="#ff7b72">✗</tspan><tspan fill="#e6edf3"> docker compose up -d db              </tspan><tspan fill="#8b949e">→</tspan><tspan fill="#e6edf3"> </tspan><tspan fill="#7ee787">✓</tspan><tspan fill="#e6edf3"> docker compose -f deploy/compose.de…  </tspan><tspan fill="#8b949e">2× in 2 sessions</tspan></text>
+<text x="24" y="518" xml:space="preserve"></text>
+<text x="24" y="538" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">YOU KEEP SAYING</tspan><tspan fill="#8b949e">   candidates for a rule</tspan></text>
+<text x="24" y="558" xml:space="preserve"><tspan fill="#e6edf3">  “no, use pnpm not npm in this repo”  </tspan><tspan fill="#8b949e">2×</tspan></text>
+<text x="24" y="578" xml:space="preserve"></text>
+<text x="24" y="598" xml:space="preserve"><tspan fill="#e6edf3" font-weight="700">BIGGEST OUTPUT HOGS</tspan></text>
+<text x="24" y="618" xml:space="preserve"><tspan fill="#e6edf3">  pnpm test                      ~40k tokens over 4 calls</tspan></text>
+<text x="24" y="638" xml:space="preserve"></text>
+<text x="24" y="658" xml:space="preserve"><tspan fill="#8b949e">Next: </tspan><tspan fill="#56d4dd">unstuck suggest</tspan><tspan fill="#e6edf3"> for AGENTS.md lines · </tspan><tspan fill="#56d4dd">unstuck report</tspan><tspan fill="#e6edf3"> for a shareable HTML page</tspan></text>
+</g></svg>
