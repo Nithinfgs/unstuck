@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+unstuck-report.html
+coverage/
+*.tgz
