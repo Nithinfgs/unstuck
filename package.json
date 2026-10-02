@@ -1,0 +1,59 @@
+{
+  "name": "unstuck",
+  "version": "0.1.0",
+  "description": "Find where your coding agent got stuck. Reads local Claude Code session logs, surfaces retry loops, edit thrash and repeated corrections, and turns recurring fixes into AGENTS.md lines. Offline, zero dependencies.",
+  "type": "module",
+  "bin": {
+    "unstuck": "bin/unstuck.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "docs/adapters.md",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "typecheck": "tsc -p jsconfig.json",
+    "check": "npm run lint && npm run typecheck && npm test",
+    "demo": "node bin/unstuck.js --demo",
+    "build:demo": "node scripts/make-demo.js",
+    "build:assets": "node scripts/render-svg.js"
+  },
+  "keywords": [
+    "claude-code",
+    "coding-agent",
+    "ai-agents",
+    "agents-md",
+    "claude-md",
+    "session-logs",
+    "developer-tools",
+    "cli",
+    "local-first",
+    "observability"
+  ],
+  "author": "Nithinfgs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nithinfgs/unstuck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nithinfgs/unstuck/issues"
+  },
+  "homepage": "https://github.com/Nithinfgs/unstuck#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^15.0.0",
+    "typescript": "^5.6.0"
+  }
+}
