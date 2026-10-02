@@ -1,0 +1,28 @@
+name: Wrong or noisy finding
+description: unstuck flagged something that was not actually a problem (or missed an obvious one)
+labels: [detector]
+body:
+  - type: input
+    id: kind
+    attributes:
+      label: Finding kind
+      placeholder: edit-thrash, retry-loop, corrections…
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened and why was it wrong?
+      description: Paste the finding line. Please remove anything private.
+    validations:
+      required: true
+  - type: textarea
+    id: shape
+    attributes:
+      label: Shape of the session
+      description: A few lines describing the tool calls (not the real transcript) are enough, e.g. "6 edits to one file, tests failed twice in between".
+  - type: input
+    id: version
+    attributes:
+      label: unstuck version
+      placeholder: unstuck --version
